@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:pizza/models/cart.dart';
+import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 
 class CartScreen extends StatelessWidget {
   @override
@@ -17,7 +18,7 @@ class CartScreen extends StatelessWidget {
               return ListTile(
                 title: Text(cart.items[index]),
                 trailing: IconButton(
-                  icon: Icon(Icons.remove_circle),
+                  icon: Icon(Ionicons.md_trash),
                   onPressed: () {
                     cart.removeItem(cart.items[index]);
                   },

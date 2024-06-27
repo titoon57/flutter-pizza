@@ -70,7 +70,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
             SizedBox(height: 16.0),
             ElevatedButton(
               onPressed: () {
-                Provider.of<CartModel>(context, listen: false).addItem(pizza['id']);
+                Provider.of<CartModel>(context, listen: false).addItem(pizza['name']);
                 ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                   content: Text('${pizza['name']} added to cart'),
                 ));

@@ -18,7 +18,8 @@ class MyApp extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (context) => CartModel(),
       child: MaterialApp.router(
-        title: 'Pizza Napoli',
+        title: 'Pizza',
+        debugShowCheckedModeBanner: false,
         theme: ThemeData(
           primarySwatch: Colors.red,
         ),
