@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:dio/dio.dart';
-import 'package:pizza/models/cart.dart';
+import '../models/cart.dart';
 
 class DetailsScreen extends StatefulWidget {
   final String id;
@@ -72,10 +72,10 @@ class _DetailsScreenState extends State<DetailsScreen> {
               onPressed: () {
                 Provider.of<CartModel>(context, listen: false).addItem(pizza['name']);
                 ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                  content: Text('${pizza['name']} added to cart'),
+                  content: Text('${pizza['name']} a été ajouté au panier'),
                 ));
               },
-              child: Text('Add to Cart'),
+              child: Text('Ajouter au panier'),
             ),
           ],
         ),

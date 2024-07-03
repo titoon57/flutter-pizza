@@ -1,6 +1,10 @@
-# pizza
+# Projet
 
-A new Flutter project.
+Projet Pizzeria
+
+# Auteur
+
+Baptiste KENENS
 
 ## Getting Started
 
