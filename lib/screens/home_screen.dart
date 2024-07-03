@@ -45,7 +45,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Pizzas List'),
+        title: Text('Liste des pizzas'),
         actions: [
           IconButton(
             icon: Icon(Ionicons.md_cart),
@@ -61,7 +61,7 @@ class _HomeScreenState extends State<HomeScreen> {
             child: TextField(
               controller: searchController,
               decoration: InputDecoration(
-                hintText: 'Search pizzas...',
+                hintText: 'Rechercher une pizza ...',
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(8.0),
                 ),

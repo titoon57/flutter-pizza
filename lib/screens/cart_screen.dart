@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:pizza/models/cart.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
+import '../models/cart.dart';
 
 class CartScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Your Cart'),
+        title: Text('Votre panier'),
       ),
       body: Consumer<CartModel>(
         builder: (context, cart, child) {
